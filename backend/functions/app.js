@@ -6,6 +6,7 @@ const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const app = express();
 require("dotenv").config();
+const serverless = require("serverless-http");
 
 //middleware
 app.use(cors());
@@ -58,3 +59,5 @@ router.post("/contact", (req, res) => {
 app.listen(3000, () => {
   console.log("Server is running on port http://localhost:3000");
 });
+
+module.exports.handler = serverless(app);
