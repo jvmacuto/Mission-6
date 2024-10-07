@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../assets/logo.svg";
+import cat from "../assets/cat.png";
 import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
 function NavBar() {
@@ -33,6 +33,9 @@ function NavBar() {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
+        <Navbar.Brand>
+          <img src={cat} alt="logo" style={{ width: "50px", height: "50px" }} />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
