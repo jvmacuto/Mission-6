@@ -14,7 +14,6 @@ import gradientbackground from "../assets/gradient-background.jpg";
 function Skills() {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -50,35 +49,35 @@ function Skills() {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <FaReact size={200} color="#61DBFB" />
+                  <FaReact size={125} color="#61DBFB" />
                   <h5>React.js</h5>
                 </div>
                 <div className="item">
-                  <SiMysql size={200} color="#4479A1" />
+                  <SiMysql size={125} color="#4479A1" />
                   <h5>MySQL</h5>
                 </div>
                 <div className="item">
-                  <SiMongodb size={200} color="#47A248" />
+                  <SiMongodb size={125} color="#47A248" />
                   <h5>MongoDB</h5>
                 </div>
                 <div className="item">
-                  <FaJsSquare size={200} color="#F7DF1E" />
+                  <FaJsSquare size={125} color="#F7DF1E" />
                   <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <FaNodeJs size={200} color="#68A063" />
+                  <FaNodeJs size={125} color="#68A063" />
                   <h5>Node.js</h5>
                 </div>
                 <div className="item">
-                  <SiExpress size={200} color="#fff" />
+                  <SiExpress size={125} color="#fff" />
                   <h5>Express.js</h5>
                 </div>
                 <div className="item">
-                  <FaHtml5 size={200} color="#E34F26" />
+                  <FaHtml5 size={125} color="#E34F26" />
                   <h5>HTML5</h5>
                 </div>
                 <div className="item">
-                  <FaCss3Alt size={200} color="#1572B6" />
+                  <FaCss3Alt size={125} color="#1572B6" />
                   <h5>CSS3</h5>
                 </div>
               </Carousel>
@@ -86,11 +85,6 @@ function Skills() {
           </div>
         </div>
       </div>
-      <img
-        className="background-image-left"
-        src={gradientbackground}
-        alt="Image"
-      />
     </section>
   );
 }

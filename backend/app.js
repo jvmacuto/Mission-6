@@ -5,6 +5,7 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const app = express();
+require("dotenv").config();
 
 //middleware
 app.use(cors());
@@ -16,8 +17,8 @@ console.log(process.env.EMAIL_PASS);
 const contactEmail = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "********@gmail.com",
-    pass: "",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
 
@@ -37,7 +38,7 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "********@gmail.com",
+    to: process.env.EMAIL_USER,
     subject: "Contact Form Submission",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
@@ -48,7 +49,7 @@ router.post("/contact", (req, res) => {
     if (error) {
       res.json(error);
     } else {
-      res.json({code: 200, status: "Message Sent" });
+      res.json({ code: 200, status: "Message Sent" });
     }
   });
 });
