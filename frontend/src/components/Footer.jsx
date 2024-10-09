@@ -28,7 +28,7 @@ function Footer() {
                   </a>
                 </div>
               </div>
-              <p className="mt-2">Copyright 2022. All Rights Reserved</p>
+              <p className="mt-2">Copyright 2024. All Rights Reserved</p>
             </Col>
           </Row>
         </Container>

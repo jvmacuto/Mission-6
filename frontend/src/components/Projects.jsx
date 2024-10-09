@@ -14,6 +14,7 @@ function Projects() {
       title: "Z Energy Project",
       description: "A project for Z Energy",
       imgUrl: image1,
+      link: "https://github.com/jvmacuto/mission-05-z-energy",
     },
   ];
   return (
